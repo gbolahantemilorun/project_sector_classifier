@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pickle
 from flask import Flask, render_template, request
@@ -35,4 +36,4 @@ def predict():
 
 # Run the Flask application
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
