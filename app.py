@@ -6,11 +6,11 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Load the trained model from the model.pkl file
-with open('best_svc_model_tfidf.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Load the vectorizer from the vectorizer.pkl file (assuming you saved it during training)
-with open('tfidf_vectorizer.pkl', 'rb') as file:
+with open('vectorizer.pkl', 'rb') as file:
     vectorizer = pickle.load(file)
 
 # Define the route for the home page
