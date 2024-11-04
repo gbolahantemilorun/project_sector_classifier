@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Sector Classification</title>
+    <style>
+        /* CSS code goes here */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #4caf50;
+        }
+
+        .logo-container {
+            margin-bottom: 5px;
+        }
+
+        .logo-image {
+            width: 150px;
+            height: 120px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px; /* Add margin to separate textarea and button */
+        }
+
+        textarea {
+            width: 500px;
+            height: 100px; /* Set your preferred height */
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #2e7d32;
+            border-radius: 8px;
+            outline: none;
+            resize: none; /* Disable textarea resizing */
+            vertical-align: middle; /* Vertically align the textarea */
+        }
+
+        textarea::placeholder {
+            color: #999999;
+        }
+
+        input[type="submit"] {
+            width: 520px;
+            padding: 10px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #2e7d32;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img class="logo-image" src="https://drive.google.com/uc?export=view&id=1GGrI3JBTJ-DaPZw5G4dfzuhMlt8c3mQG" alt="Coat of Arms">
+    </div>
+    <div class="header">
+        <h1 class="header-title">Project Sector Classification</h1>
+    </div>
+    <div class="form-container">
+        <form action="/predict" method="post">
+            <div class="input-container">
+                <textarea id="title" name="title" placeholder="Enter Project Title" required></textarea>
+            </div>
+            <div class="input-container">
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

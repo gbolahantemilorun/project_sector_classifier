@@ -1,0 +1,15 @@
+flask==2.3.2
+imbalanced-learn==0.10.1
+matplotlib==3.7.1
+pandas==2.0.2
+scikit-learn==1.2.2
+seaborn==0.12.2
+gunicorn==20.1.0
+itsdangerous>=2.1.0
+Jinja2>=3.1.0
+scipy>=1.7.3
+MarkupSafe>=2.1.0
+xgboost==1.4.2
+lightgbm==3.3.1
+contractions==0.0.48
+nltk==3.6.3
